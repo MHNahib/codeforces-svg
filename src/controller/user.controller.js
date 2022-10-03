@@ -11,7 +11,6 @@ const getUser = async (req, res) => {
     });
     if (response?.data?.status === "OK") {
       // console.log("data", response?.data);
-      console.log("==============");
 
       let nameOrRating =
         response?.data?.result[0]?.firstName &&
@@ -53,7 +52,7 @@ const getUser = async (req, res) => {
           role="img"
           aria-labelledby="descId"
         >
-          <title id="titleId">M. H. Nahib's GitHub Stats, Rating: 1</title>
+          <title id="titleId">M. H. Nahib's CODEFORCES Stats, Rating: 1</title>
           <desc id="descId">Total rating: ${rating}, Max rating : ${maxRating}, Rank: ${rank}, Max Rank: ${maxRank}, Country: ${country}</desc>
           <style>
             .header {
